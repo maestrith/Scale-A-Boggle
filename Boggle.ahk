@@ -63,6 +63,7 @@ Class ScaleABoggle{
 		GuiControl,+g,%Try%,%Bind%
 		this.Connect:=this.GetConnect(Count)
 		Gui,Show,,Scale-A-Boggle
+		SB_SetText("Press Enter To Start")
 	}Backspace(){
 		ControlGetText,Word,,% this.TID
 		SendMessage,0xB0,0,0,,% this.TID
